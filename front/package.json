@@ -1,0 +1,19 @@
+{
+  "name": "electrometro",
+  "description": "Ahorra en tu factura eléctrica",
+  "dependencies": {},
+  "devDependencies": {
+    "coffee-script": "1.8.0",
+    "gulp": "3.8.8",
+    "gulp-coffee": "2.2.0",
+    "gulp-sass": "1.2.0",
+    "gulp-minify-css": "0.3.11",
+    "gulp-rename": "1.2.0",
+    "gulp-karma": "0.0.4",
+    "karma-jasmine": "0.1.5",
+    "karma-phantomjs-launcher": "0.1.4",
+    "karma-chrome-launcher": "0.1.5",
+    "del": "0.1.3"
+  }
+}
+

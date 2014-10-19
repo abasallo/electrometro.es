@@ -1,0 +1,32 @@
+<ion-view title="{{helpTitle}}">
+  <ion-content class="has-header padding" scroll="true">
+
+    <div ng-show='helpCommand.fromHome'>
+
+      <div class="helpSubtitle">{{ 'HELP_HOME_SUBTITLE1' | translate }}</div>
+      <img src='img/help/gaugeChart.png' class='helpImage'>
+      <p>{{ 'HELP_HOME_P1' | translate }}</p>
+      <div class="helpSubtitle linesSubtitle">{{ 'HELP_HOME_SUBTITLE2' | translate }}</div>
+      <img src='img/help/linesChart.png' class='helpImage'>
+      <p>{{ 'HELP_HOME_P2' | translate }}</p>
+      <p>{{ 'HELP_HOME_P3' | translate }}</p>
+
+    </div>
+
+    <div ng-show='helpCommand.fromAlarm'>
+
+      <div class="helpSubtitle">{{ 'HELP_ALARM_SUBTITLE1' | translate }}</div>
+      <img src='img/help/coloredButtons.png' class='helpImage'>
+      <p>{{ 'HELP_ALARM_P1' | translate }}</p>
+      <p>{{ 'HELP_ALARM_P2' | translate }}</p>
+      <div class="helpSubtitle">{{ 'HELP_ALARM_SUBTITLE2' | translate }}</div>
+      <img src='img/help/givenPrice.png' class='helpImage'>
+      <p>{{ 'HELP_ALARM_P3' | translate }}</p>
+      <p>{{ 'HELP_ALARM_P4' | translate }}</p>
+
+    </div>
+
+    <div id="helpContentFiller"></div>
+
+  </ion-content>
+</ion-view>

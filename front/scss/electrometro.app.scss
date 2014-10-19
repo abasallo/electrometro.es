@@ -1,0 +1,143 @@
+/*
+To customize the look and feel of Ionic, you can override the variables
+in ionic's _variables.scss file.
+
+For example, you might change some of the default colors:
+
+$light:                           #fff !default;
+$stable:                          #f8f8f8 !default;
+$positive:                        #4a87ee !default;
+$calm:                            #43cee6 !default;
+$balanced:                        #66cc33 !default;
+$energized:                       #f0b840 !default;
+$assertive:                       #ef4e3a !default;
+$royal:                           #8a6de9 !default;
+$dark:                            #444 !default;
+*/
+
+// The path for our ionicons font files, relative to the built CSS in www/css
+$ionicons-font-path: "../lib/ionic/fonts" !default;
+
+// Include all of Ionic
+@import "www/lib/ionic/scss/ionic";
+
+ion-nav-bar h1 {
+    color: black;
+    font-weight: bolder;
+}
+
+
+ion-nav-view ion-tabs .tabs a.tab-item span {
+    font-weight: bolder;
+}
+
+#gauge_chart {
+    height: 45%;
+    margin-top: -1%; /* TODO - El título no se puede quitar y tiene un margen excesivo */
+}
+
+.mainSubtitle {
+    margin-top: 1%;
+    height: 4%;
+    color: #000000;
+    text-align: center;
+    vertical-align: bottom;
+    font-size: 120%;
+    font-weight: bold;
+}
+
+#lines_chart {
+    height: 50%;
+}
+
+#lines_chart tspan {
+    font-weight: bolder;
+}
+
+/* TODO - Para el problema del scroll en las pantallas pequeñas */
+#alarmContentFiller {
+    min-height: 10px;
+}
+
+.alarmSubtitle {
+    text-align: center;
+    font-size: 125%;
+    font-weight: bold;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+#coloredButtons {
+    height: 85%;
+    width: 55%;
+    display: table;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.alarmCard {
+    margin-bottom: 8%;
+}
+
+.alarmTitle {
+    text-align: center;
+}
+
+.alarmButton {
+    display: table;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.popUpAlarmTitle {
+    font-size: 120%;
+    vertical-align: middle;
+    margin-right: 3%;
+}
+
+.popUpAlarmIcon {
+    font-size: 200%;
+    vertical-align: middle;
+    margin-right: 5%;
+    margin-left: 3%;
+}
+
+
+.modalNetworkIcon {
+    font-size: 250%;
+    margin-left: 4%;
+}
+
+.modalNetworkContent {
+    padding: 7% 5% 0 5%;
+}
+
+/* TODO - Para el problema del scroll en las pantallas pequeñas */
+#helpContentFiller {
+    min-height: 10px;
+}
+
+.helpSubtitle {
+    text-align: center;
+    font-size: 115%;
+    font-weight: bold;
+    padding-top: 3%;
+    padding-bottom: 4%;
+}
+
+.linesSubtitle {
+    padding-top: 0;
+}
+
+.helpImage {
+    display: table;
+    margin: 0 auto 4% auto;
+}
+
+
+
+

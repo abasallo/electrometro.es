@@ -1,0 +1,67 @@
+<ion-view title="{{ 'ALARM_TITLE' | translate }}">
+  <ion-content class="has-header padding" scroll="true">
+
+    <form name="alarmForm" ng-controller="AlarmController">
+
+      <div class="alarmSubtitle" ng-hide="alarmCommand.isThereAnAlarmSet">{{ 'ALARM_PRICE_ZONES_SUBTITLE' | translate }}</div>
+
+      <div id="coloredButtons" ng-hide="alarmCommand.isThereAnAlarmSet">
+        <button class="button button-block button-balanced icon-pulling ion-ios7-alarm-outline" ng-disabled="alarmCommand.isGreenZoneButtonDisabled" ng-click='alarmCommand.alarmOnGreenZone()'>
+          &nbsp;{{ 'ALARM_PRICE_ZONES_CHEAP' | translate }}
+        </button>
+
+        <button class="button button-block button-energized icon-pulling ion-ios7-alarm-outline" ng-disabled="alarmCommand.isYellowZoneButtonDisabled" ng-click='alarmCommand.alarmOnYellowZone()'>
+          &nbsp;{{ 'ALARM_PRICE_ZONES_REASONABLE' | translate }}
+        </button>
+
+        <button class="button button-block button-assertive icon-pulling ion-ios7-alarm-outline" ng-disabled="alarmCommand.isRedZoneButtonDisabled" ng-click='alarmCommand.alarmOnRedZone()'>
+          &nbsp;{{ 'ALARM_PRICE_ZONES_EXPENSIVE' | translate }}
+        </button>
+      </div>
+
+      <div class="card alarmCard" ng-hide="alarmCommand.isThereAnAlarmSet">
+
+        <div class="item item-divider alarmTitle">
+          {{ 'ALARM_EXACT_PRICE' | translate }}
+        </div>
+
+        <div class="item item-text-wrap">
+          <div class="range" title="{{alarmCommand.priceActualValue}}">
+            {{alarmCommand.priceMinimumValue}}
+            <input ng-model='alarmCommand.priceActualValue' type="range" step="0.01" min="{{alarmCommand.priceFutureMinimumValue}}" max="{{alarmCommand.priceMaximumValue}}"
+                   value="{{alarmCommand.priceFutureMinimumValue > alarmCommand.priceAverageValue ? alarmCommand.priceFutureMinimumValue : alarmCommand.priceAverageValue}}">
+            {{alarmCommand.priceMaximumValue}}
+          </div>
+
+          <button class="button button-positive icon-pulling ion-ios7-alarm-outline alarmButton" ng-disabled="isFreeNotificationButtonDisabled" ng-click='alarmCommand.alarmOnGivenPrice()'>
+            {{alarmCommand.priceActualValue}} {{ 'ALARM_EXACT_PRICE_UNITS' | translate }}
+          </button>
+        </div>
+
+      </div>
+
+      <div class="card alarmCard" ng-show="alarmCommand.isThereAnAlarmSet">
+
+        <div class="item item-divider alarmTitle">
+            {{ 'ALARM_CARD_TITLE' | translate }}
+        </div>
+
+        <div class="item item-text-wrap">
+
+          <p>{{ 'ALARM_CARD_MESSAGE' | translate }} {{alarmCommand.alarmSetHour}}:00</p>
+
+          <button class="button button-positive icon-pulling ion-ios7-alarm-outline alarmButton" ng-click='alarmCommand.cancelAlarm()'>
+            &nbsp;{{ 'ALARM_CARD_DELETE' | translate }}
+          </button>
+
+        </div>
+      </div>
+
+    </form>
+
+    <div id="alarmContentFiller"></div>
+
+  </ion-content>
+</ion-view>
+
+
