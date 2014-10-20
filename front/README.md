@@ -37,6 +37,7 @@ For avoiding committing unnecessary files to the CVS, some initial steps must be
 - **Platforms**. Initially /platforms dir should be empty. Directories for android and ios should be created:
 
     ionic platform ios
+    
     ionic platform android
 
     After this steps, command:
@@ -46,11 +47,13 @@ For avoiding committing unnecessary files to the CVS, some initial steps must be
     Should show:
 
     Installed platforms: android 3.5.0, ios 3.5.0
+    
     Available platforms: amazon-fireos, blackberry10, firefoxos
 
 - **Plugins**. Initially /plugins dir should be empty. A directory for every plugin should be created:
 
     ionic plugin add de.appplant.cordova.plugin.local-notification
+    
     ionic plugin add org.apache.cordova.network-information
 
     After this steps, command:
