@@ -32,8 +32,7 @@ For avoiding committing unnecessary files to the CVS, some initial steps must be
 
 - **Project dependencies update for npm and bower**. Should create dependencies dir for both.
 
-    npm update
-    bower update
+    npm update && bower update
 
 - **Platforms**. Initially /platforms dir should be empty. Directories for android and ios should be created:
 
@@ -61,9 +60,13 @@ For avoiding committing unnecessary files to the CVS, some initial steps must be
     Should show:
     
     com.ionic.keyboard 1.0.3 "Keyboard"
+    
     de.appplant.cordova.plugin.local-notification 0.7.6 "LocalNotification"
+    
     org.apache.cordova.console 0.2.11 "Console"
+    
     org.apache.cordova.device 0.2.12 "Device"
+    
     org.apache.cordova.network-information 0.2.12 "Network Information"
 
 
