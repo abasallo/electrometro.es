@@ -7,3 +7,4 @@ www/js
 www/lib
 electrometro-release-apk.sh
 *.keystore
+*.apk
