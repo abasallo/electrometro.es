@@ -1,4 +1,4 @@
-angular.module('electrometro.services.remote').factory 'dailyPrices', ($http) ->
+angular.module('electrometro.services.remote').factory 'dailyPrices', ($http, $rootScope) ->
 
   minimum: ->
     $http.get($rootScope.jsonServerUrl + 'todayMinimumPrice').then (result) ->

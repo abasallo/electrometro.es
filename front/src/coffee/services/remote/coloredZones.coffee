@@ -1,4 +1,4 @@
-angular.module('electrometro.services.remote').factory 'coloredZones', ($http) ->
+angular.module('electrometro.services.remote').factory 'coloredZones', ($http, $rootScope) ->
 
   isThereAFutureGreenZoneToday: ->
     $http.get($rootScope.jsonServerUrl + 'isThereAFutureGreenZoneToday').then (result) ->
