@@ -1,14 +1,13 @@
 angular.module('electrometro.services.remote').factory 'coloredZones', ($http) ->
 
   isThereAFutureGreenZoneToday: ->
-    $http.get('http://electrometro.es:8080/isThereAFutureGreenZoneToday').then (result) ->
+    $http.get($rootScope.jsonServerUrl + 'isThereAFutureGreenZoneToday').then (result) ->
       result.data
 
   isThereAFutureYellowZoneToday: ->
-    $http.get('http://electrometro.es:8080/isThereAFutureYellowZoneToday').then (result) ->
+    $http.get($rootScope.jsonServerUrl + 'isThereAFutureYellowZoneToday').then (result) ->
       result.data
 
-
   isThereAFutureRedZoneToday: ->
-    $http.get('http://electrometro.es:8080/isThereAFutureRedZoneToday').then (result) ->
+    $http.get($rootScope.jsonServerUrl + 'isThereAFutureRedZoneToday').then (result) ->
       result.data

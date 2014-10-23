@@ -1,23 +1,22 @@
 angular.module('electrometro.services.remote').factory 'dailyPrices', ($http) ->
 
   minimum: ->
-    $http.get('http://electrometro.es:8080/todayMinimumPrice').then (result) ->
+    $http.get($rootScope.jsonServerUrl + 'todayMinimumPrice').then (result) ->
       result.data
 
   futureMinimum: ->
-    $http.get('http://electrometro.es:8080/todayMinimumFuturePrice').then (result) ->
+    $http.get($rootScope.jsonServerUrl + 'todayMinimumFuturePrice').then (result) ->
       result.data
 
   average: ->
-    $http.get('http://electrometro.es:8080/todayAveragePrice').then (result) ->
+    $http.get($rootScope.jsonServerUrl + 'todayAveragePrice').then (result) ->
       result.data
 
 
   maximum: ->
-    $http.get('http://electrometro.es:8080/todayMaximumPrice').then (result) ->
+    $http.get($rootScope.jsonServerUrl + 'todayMaximumPrice').then (result) ->
       result.data
 
-
   actual: ->
-    $http.get('http://electrometro.es:8080/actualPrice').then (result) ->
+    $http.get($rootScope.jsonServerUrl + 'actualPrice').then (result) ->
       result.data
