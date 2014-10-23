@@ -49,7 +49,7 @@ angular.module('electrometro').config ($translateProvider) ->
 
   $translateProvider.translations 'en',
 
-    TAB_HOME: 'Current Prices'
+    TAB_HOME: 'Prices Now'
     TAB_ALARM: 'Alarm'
     TAB_HELP: 'Help'
 
@@ -57,22 +57,22 @@ angular.module('electrometro').config ($translateProvider) ->
     MODAL_NO_CONNECTIVITY_P1: 'This app needs Internet to work.'
     MODAL_NO_CONNECTIVITY_P2: 'Please, turn off airplane mode, or try again when a network is available.'
 
-    HOME_TITLE: "Today's prices"
+    HOME_TITLE: "Today's Prices"
     HOME_GAUGE_TITLE: 'Now'
     HOME_GAUGE_LABEL: 'cents/kWh'
     HOME_SUBTITLE: 'Hourly'
 
     ALARM_TITLE: 'Alarm'
-    ALARM_PRICE_ZONES_SUBTITLE: 'Price zones'
+    ALARM_PRICE_ZONES_SUBTITLE: 'Price Zones'
     ALARM_PRICE_ZONES_CHEAP: 'Cheap'
     ALARM_PRICE_ZONES_REASONABLE: 'Reasonable'
     ALARM_PRICE_ZONES_EXPENSIVE: 'Expensive'
     ALARM_EXACT_PRICE: 'Exact Price'
     ALARM_EXACT_PRICE_UNITS: 'cents/kWh'
-    ALARM_CARD_TITLE: 'Current alarm'
+    ALARM_CARD_TITLE: 'Current Alarm'
     ALARM_CARD_MESSAGE: 'There is already an alarm set at'
     ALARM_CARD_DELETE: 'Remove it'
-    ALARM_POPUP_TITLE: 'Alarm set at '
+    ALARM_POPUP_TITLE: 'Alarm Set At '
     ALARM_POPUP_TEMPLATE: 'At selected hour, a notification with its corresponding sound will be shown.'
     ALARM_POPUP_OK: 'Ok'
     ALARM_POPUP_CANCEL: 'Cancel'
