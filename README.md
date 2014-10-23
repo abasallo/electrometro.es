@@ -4,7 +4,7 @@ Electrómetro
 Introduction
 --------------
 
-Electrómetro is a web application, deployed as a mobile one using Ionic and allowing users to check, for the new spanish hourly electric bill, instant and historic prices, set alarms, etc.
+Electrómetro is a web application, deployed as a mobile one using Ionic, and allowing users to check, for the new spanish hourly electric bill, instant and historic prices, set alarms, etc.
 
 front directory
 --------------
