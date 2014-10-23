@@ -1,3 +1,9 @@
 node_modules/
 platforms/
 plugins/
+test/js
+www/css
+www/js
+www/lib
+electrometro-release-apk.sh
+*.keystore
