@@ -2,12 +2,12 @@
   "name": "electrometro",
   "private": "true",
   "dependencies": {
-    "ionic": "driftyco/ionic-bower#1.0.0-beta.13",
     "angular-translate": "2.4.1",
     "justgage-official": "b5398633c5",
     "morris.js": "0.5.1"
   },
   "devDependencies": {
+    "ionic": "driftyco/ionic-bower#1.0.0-beta.13",
     "angular-mocks": "1.2.26"
   }
 }
