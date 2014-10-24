@@ -19,7 +19,7 @@ angular.module('electrometro').run(($rootScope, $ionicPlatform, $ionicLoading, $
 
       onConnected: ->
         $rootScope.modalNetwork.hide() if $rootScope.modalNetwork
-        $window.location.reload()
+        $window.location.reload() if $window
 
       onDisconnected: ->
         $rootScope.modalNetwork.show()
