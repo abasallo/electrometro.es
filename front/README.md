@@ -53,6 +53,7 @@ For avoiding committing unnecessary files to the CVS, some initial steps must be
 
     *ionic plugin add de.appplant.cordova.plugin.local-notification*   
     *ionic plugin add org.apache.cordova.network-information*
+    *ionic plugin add https://github.com/apla/me.apla.cordova.app-preferences*
 
     After this steps, command:
 
@@ -61,7 +62,8 @@ For avoiding committing unnecessary files to the CVS, some initial steps must be
     Should show:
     
     *com.ionic.keyboard 1.0.3 "Keyboard"*   
-    *de.appplant.cordova.plugin.local-notification 0.7.6 "LocalNotification"*   
+    *de.appplant.cordova.plugin.local-notification 0.7.6 "LocalNotification"*  
+    *me.apla.cordova.app-preferences 0.4.2 "AppPreferences"*
     *org.apache.cordova.console 0.2.11 "Console"*   
     *org.apache.cordova.device 0.2.12 "Device"*   
     *org.apache.cordova.network-information 0.2.12 "Network Information"*
