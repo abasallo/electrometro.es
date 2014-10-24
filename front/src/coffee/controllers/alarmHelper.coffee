@@ -4,30 +4,20 @@ angular.module('electrometro.controllers').factory 'alarmHelper', ($rootScope, $
   alarmPopupTemplate = $translate.instant 'ALARM_POPUP_TEMPLATE'
 
   initializeDailyPrices: (command) ->
-    $rootScope.$emit 'loadingTaskStarted'
     dailyPrices.minimum().then (price) ->
       command.priceMinimumValue = price.value
-      $rootScope.$emit 'loadingTaskFinished'
 
-    $rootScope.$emit 'loadingTaskStarted'
     dailyPrices.futureMinimum().then (price) ->
       command.priceFutureMinimumValue = price.value
-      $rootScope.$emit 'loadingTaskFinished'
 
-    $rootScope.$emit 'loadingTaskStarted'
     dailyPrices.average().then (price) ->
       command.priceAverageValue = price.value
-      $rootScope.$emit 'loadingTaskFinished'
 
-    $rootScope.$emit 'loadingTaskStarted'
     dailyPrices.maximum().then (price) ->
       command.priceMaximumValue = price.value
-      $rootScope.$emit 'loadingTaskFinished'
 
-    $rootScope.$emit 'loadingTaskStarted'
     dailyPrices.actual().then (price) ->
       command.priceActualValue = price.value
-      $rootScope.$emit 'loadingTaskFinished'
 
   setTo: (command, hour) ->
     $ionicPopup.confirm(

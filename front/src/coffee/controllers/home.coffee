@@ -1,7 +1,5 @@
 angular.module('electrometro.controllers').controller 'HomeController', ($rootScope, $translate, gaugeChart, linesChart) ->
 
-  $rootScope.$emit 'loadingTaskStarted'
-
   gaugeChart.json().then (json) ->
     json.title = $translate.instant 'HOME_GAUGE_TITLE'
     json.label = $translate.instant 'HOME_GAUGE_LABEL'
@@ -13,5 +11,3 @@ angular.module('electrometro.controllers').controller 'HomeController', ($rootSc
     json.yLabelFormat = (y) ->
       (Math.round(y * 10) / 10).toString()
     new Morris.Area(json)
-
-  $rootScope.$emit 'loadingTaskFinished'

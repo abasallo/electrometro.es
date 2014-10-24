@@ -32,14 +32,6 @@ angular.module('electrometro').run(($rootScope, $ionicPlatform, $ionicLoading, $
 
     $rootScope.loadingModalCounter = 0
 
-    $rootScope.$on 'loadingTaskStarted', ->
-      $rootScope.loadingModalCounter++
-      $ionicLoading.show templateUrl: 'views/modal/loading.html'
-
-    $rootScope.$on 'loadingTaskFinished', ->
-      $rootScope.loadingModalCounter--
-      $ionicLoading.hide() unless $rootScope.loadingModalCounter
-
     deviceEvents.initialize()
 )
 
