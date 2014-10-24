@@ -4,9 +4,7 @@ angular.module('electrometro.controllers').controller 'AlarmController', ($rootS
 
   alarmService.isSet (isSet) -> $scope.alarmCommand.isThereAnAlarmSet = isSet
 
-  alarmService.getHour (hour) ->
-    $scope.alarmCommand.alarmSetHour = hour
-    console.log 'getPreference ' + hour
+  alarmService.getHour (hour) -> $scope.alarmCommand.alarmSetHour = hour
 
   coloredZones.isThereAFutureGreenZoneToday().then (isThereAFuturePriceInPriceInZone) ->
     $scope.alarmCommand.isGreenZoneButtonDisabled = not isThereAFuturePriceInPriceInZone.value
