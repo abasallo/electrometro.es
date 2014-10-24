@@ -18,7 +18,7 @@ angular.module('electrometro').run(($rootScope, $ionicPlatform, $ionicLoading, $
         document.addEventListener 'offline', @onDisconnected, false
 
       onConnected: ->
-        $rootScope.modalNetwork.hide()
+        $rootScope.modalNetwork.hide() if $rootScope.modalNetwork
         $window.location.reload()
 
       onDisconnected: ->
