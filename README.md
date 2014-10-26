@@ -14,4 +14,4 @@ Contains Ionic UI (a layer over Phonegap/Cordova) written using AngularJS and Co
 back directory
 --------------
 
-Will soon contains backend code...
+Contains REST JSON backend writen using Groovy and Grails with Spock as BDD testing framework.
