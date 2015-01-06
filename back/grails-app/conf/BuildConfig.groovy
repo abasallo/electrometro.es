@@ -33,21 +33,19 @@ grails.project.dependency.resolution = {
   dependencies {
     compile 'org.ccil.cowan.tagsoup:tagsoup:1.2.1'
 
-    runtime 'mysql:mysql-connector-java:5.1.31'
+    runtime 'mysql:mysql-connector-java:5.1.34'
   }
 
   plugins {
-    build ':tomcat:7.0.52.1'
+    build ':tomcat:7.0.55'
 
-    compile ':scaffolding:2.1.0'
-    compile ':cache:1.1.3'
-    compile ':asset-pipeline:1.8.3'
+    compile ':scaffolding:2.1.2'
+    compile ':cache:1.1.8'
+    compile ':asset-pipeline:1.9.9'
     compile ':quartz:1.0.1'
-    compile ':mail:1.0.6'
+    compile ':mail:1.0.7'
 
     runtime ':hibernate4:4.3.5.2'
-    runtime ':database-migration:1.4.0'
-    runtime ':jquery:1.11.0.2'
   }
 }
 
